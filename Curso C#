@@ -64,6 +64,21 @@ namespace HolaMundo
             Console.ReadKey();
 
 
+        // ------------- PARTE 6 OPERADORES ARITMETICOS -----------------------
+
+            /*
+             * =
+             * +
+             * *
+             * /
+             * % devuelve el residuo de la division
+            */
+
+            int result = 7%3;
+            Console.WriteLine("la variabel resultado contiene : " + result);
+            Console.ReadKey();
+
+
         }
     }
 }
