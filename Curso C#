@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+/* ------------ C# DESDE CERO ---------------
+ *  MADELAINE MALOY 
+ *  MARTES 7 DE AGOSTO 2018
+ *  I'M UNEMPLOYED BUT HAPPY STUDING!
+ *  -----------------------------------------
+ */
+
+// namespace paquete acceder a este paquete con este nombre 
+namespace HolaMundo
+//Bloque de codigo
+{
+    class Program // 
+    {
+        // Funcion Principal (ejecucion o creacion de instrucciones que se ejecutaran )
+        static void Main(string[] args) 
+        {
+        // ------------- PARTE 2 HOLA MUNDO -----------------------
+
+            //INSTRUCCIONES
+            //Crear mi Primer Programa
+            Console.Write("Hola Mundo");
+            // detener 
+            Console.ReadKey();
+
+
+        // ------------- PARTE 3 VARIABNLES -----------------------
+            //[tipo de dato] [Nombre de Variable] = [Inicializacion]; 
+            int numero = 7;
+            string cadena = " hola madelaine lo estas intentando";
+
+            //instrucciones
+            Console.Write("La variable numero contiene : " + numero + cadena) ;
+            Console.ReadKey();
+
+
+        // ------------- PARTE 4 VARIABLES EN CONSOLA -----------------------
+
+            int entero = 5;
+            string caden = "esta es la cadena";
+            bool valor = false;
+
+
+            Console.WriteLine("la variable entero  tiene: {0}, la variable cadena contiene : {1}, la variable booleana contiene : {2}",entero,caden,valor);
+            Console.ReadKey();
+
+        // ------------- PARTE 4 VARIABLES EN CONSOLA -----------------------
+
+        }
+    }
+}
