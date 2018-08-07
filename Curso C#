@@ -49,7 +49,20 @@ namespace HolaMundo
             Console.WriteLine("la variable entero  tiene: {0}, la variable cadena contiene : {1}, la variable booleana contiene : {2}",entero,caden,valor);
             Console.ReadKey();
 
-        // ------------- PARTE 4 VARIABLES EN CONSOLA -----------------------
+        // ------------- PARTE 5 OPERADORES LOGICOS -----------------------
+            /* == igualdad
+             * != noigual o diferente
+             * < menor que 
+             * > mayor que 
+             * >= mayor o igual
+             * <= menor o igual
+             *
+             */
+
+            bool resultado = 5!=8;
+            Console.WriteLine(resultado);
+            Console.ReadKey();
+
 
         }
     }
