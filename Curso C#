@@ -79,6 +79,18 @@ namespace HolaMundo
             Console.ReadKey();
 
 
+        // ------------- PARTE 7 LEER DE LA CONSOLA -----------------------
+
+            string entrada = "";
+
+
+            Console.WriteLine("Escribe tu nombre ");
+            entrada = Console.ReadLine();
+
+            Console.WriteLine("hola " + entrada + ", Como te encuentras hoy ?");
+            Console.ReadKey();
+    
+
         }
     }
 }
