@@ -121,7 +121,6 @@ namespace HolaMundo
             int x = 10;
             int y = 10;
 
-            // EJERCICIOS -----------------------------------------------------
 
             if (a == 0 && b == 0) // las dos deben ser igual 
             {
@@ -132,10 +131,8 @@ namespace HolaMundo
             }
             Console.ReadKey();
 
-            
-            // EJERCICIOS -----------------------------------------------------
 
-            if (a == 0 || b == 0) // si alguna es verdadera entra al ciclo 
+            if (a == 0 || b == 0) // las dos deben ser igual 
             {
                 Console.WriteLine("al menos uno de los Valores es cero");
             }
@@ -145,14 +142,23 @@ namespace HolaMundo
             }
             Console.ReadKey();
 
+        // ------------- PARTE 10 SWITCH - CASE -----------------------
 
+            int val = 1;
+            switch(val)
+            {
+                case 1:
+                    Console.WriteLine("entro al case 1");
+                    break;
+                case 2:
+                    Console.WriteLine("entro al case 2");
+                    break;
+                default:
+                    Console.WriteLine("entro al default");
+                    break;
 
-        // ------------- PARTE 11 SWITCH - CASE -----------------------
-
-
-
-
-
+            }
+            Console.ReadKey();
 
 
         } //fin
