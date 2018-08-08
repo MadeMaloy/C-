@@ -89,8 +89,72 @@ namespace HolaMundo
 
             Console.WriteLine("hola " + entrada + ", Como te encuentras hoy ?");
             Console.ReadKey();
-    
 
-        }
+
+        // ------------- PARTE 8 SENTENCIA IF -----------------------
+            
+            /* IF - SI
+             * sentencia de condicion 
+            */
+
+            if (10 > 20)
+            {
+                //instruccion
+                Console.WriteLine("La sentencia es verdadera ");
+            }
+            else{
+                Console.WriteLine("Es falsa");
+            }
+            Console.ReadKey();
+
+        // ------------- PARTE 9 EXPRESIONES LOGICAS -----------------------
+
+            /* Operadores Logicos
+             * Y = &&
+             * O = !!
+             * NOT = !
+             * 
+            */
+
+            int a = 0;
+            int b = 0;
+            int x = 10;
+            int y = 10;
+
+            // EJERCICIOS -----------------------------------------------------
+
+            if (a == 0 && b == 0) // las dos deben ser igual 
+            {
+                Console.WriteLine("Las dos valores son cero");
+            }
+            else {
+                Console.WriteLine("solo uno de los dos valores es cero");
+            }
+            Console.ReadKey();
+
+            
+            // EJERCICIOS -----------------------------------------------------
+
+            if (a == 0 || b == 0) // si alguna es verdadera entra al ciclo 
+            {
+                Console.WriteLine("al menos uno de los Valores es cero");
+            }
+            else
+            {
+                Console.WriteLine("Ninguno de los valores es cero ");
+            }
+            Console.ReadKey();
+
+
+
+        // ------------- PARTE 11 SWITCH - CASE -----------------------
+
+
+
+
+
+
+
+        } //fin
     }
 }
