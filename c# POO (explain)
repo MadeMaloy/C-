@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Curso_Csharp_POO__continuacion_
+{
+    class Programs
+    {
+        static void Main(String[] args)
+        {
+            Automovil auto = new Automovil();
+            auto.precio = 5000;
+            Console.WriteLine("precio del auto : " + auto.precio);
+            auto.arrancar();
+            Console.ReadKey();
+        }
+
+    }
+
+
+    /* ------------------------------------------------------ */
+
+    class Automovil
+    {
+        // atributos datos
+        public int precio;
+        public int velocidad;
+
+        // metodos Funciones
+        public void arrancar()
+        {
+            Console.WriteLine("el auto ya partio");
+        }
+
+
+
+    }
+
+} // fin 
