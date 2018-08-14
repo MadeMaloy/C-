@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 /* ------------ C# DESDE CERO ---------------
  *  MADELAINE MALOY 
@@ -18,149 +19,558 @@ namespace HolaMundo
     class Program // 
     {
         // Funcion Principal (ejecucion o creacion de instrucciones que se ejecutaran )
-        static void Main(string[] args) 
-        {
-        // ------------- PARTE 2 HOLA MUNDO -----------------------
+       // static void Main(string[] args)
+       // {
 
-            //INSTRUCCIONES
-            //Crear mi Primer Programa
-            Console.Write("Hola Mundo");
-            // detener 
-            Console.ReadKey();
+            
 
+            //mostrarhola();
+            //resta(10,2);
+            //Console.WriteLine("el resultado es: " + multiplica(2,5));
+            //Console.ReadKey();
+            
+            //// ------------- PARTE 2 HOLA MUNDO -----------------------
 
-        // ------------- PARTE 3 VARIABNLES -----------------------
-            //[tipo de dato] [Nombre de Variable] = [Inicializacion]; 
-            int numero = 7;
-            string cadena = " hola madelaine lo estas intentando";
-
-            //instrucciones
-            Console.Write("La variable numero contiene : " + numero + cadena) ;
-            Console.ReadKey();
+            ////INSTRUCCIONES
+            ////Crear mi Primer Programa
+            //Console.Write("Hola Mundo");
+            //// detener 
+            //Console.ReadKey();
 
 
-        // ------------- PARTE 4 VARIABLES EN CONSOLA -----------------------
+            //// ------------- PARTE 3 VARIABNLES -----------------------
+            ////[tipo de dato] [Nombre de Variable] = [Inicializacion]; 
+            //int numero = 7;
+            //string cadena = " hola madelaine lo estas intentando";
 
-            int entero = 5;
-            string caden = "esta es la cadena";
-            bool valor = false;
-
-
-            Console.WriteLine("la variable entero  tiene: {0}, la variable cadena contiene : {1}, la variable booleana contiene : {2}",entero,caden,valor);
-            Console.ReadKey();
-
-        // ------------- PARTE 5 OPERADORES LOGICOS -----------------------
-            /* == igualdad
-             * != noigual o diferente
-             * < menor que 
-             * > mayor que 
-             * >= mayor o igual
-             * <= menor o igual
-             *
-             */
-
-            bool resultado = 5!=8;
-            Console.WriteLine(resultado);
-            Console.ReadKey();
+            ////instrucciones
+            //Console.Write("La variable numero contiene : " + numero + cadena);
+            //Console.ReadKey();
 
 
-        // ------------- PARTE 6 OPERADORES ARITMETICOS -----------------------
+            //// ------------- PARTE 4 VARIABLES EN CONSOLA -----------------------
+
+            //int entero = 5;
+            //string caden = "esta es la cadena";
+            //bool valor = false;
+
+
+            //Console.WriteLine("la variable entero  tiene: {0}, la variable cadena contiene : {1}, la variable booleana contiene : {2}", entero, caden, valor);
+            //Console.ReadKey();
+
+            //// ------------- PARTE 5 OPERADORES LOGICOS -----------------------
+            ///* == igualdad
+            // * != noigual o diferente
+            // * < menor que 
+            // * > mayor que 
+            // * >= mayor o igual
+            // * <= menor o igual
+            // *
+            // */
+
+            //bool resultado = 5 != 8;
+            //Console.WriteLine(resultado);
+            //Console.ReadKey();
+
+
+            //// ------------- PARTE 6 OPERADORES ARITMETICOS -----------------------
+
+            ///*
+            // * =
+            // * +
+            // * *
+            // * /
+            // * % devuelve el residuo de la division
+            //*/
+
+            //int result = 7 % 3;
+            //Console.WriteLine("la variabel resultado contiene : " + result);
+            //Console.ReadKey();
+
+
+            //// ------------- PARTE 7 LEER DE LA CONSOLA -----------------------
+
+            //string entrada = "";
+
+
+            //Console.WriteLine("Escribe tu nombre ");
+            //entrada = Console.ReadLine();
+
+            //Console.WriteLine("hola " + entrada + ", Como te encuentras hoy ?");
+            //Console.ReadKey();
+
+
+            //// ------------- PARTE 8 SENTENCIA IF -----------------------
+
+            ///* IF - SI
+            // * sentencia de condicion 
+            //*/
+
+            //if (10 > 20)
+            //{
+            //    //instruccion
+            //    Console.WriteLine("La sentencia es verdadera ");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Es falsa");
+            //}
+            //Console.ReadKey();
+
+            //// ------------- PARTE 9 EXPRESIONES LOGICAS -----------------------
+
+            ///* Operadores Logicos
+            // * Y = &&
+            // * O = !!
+            // * NOT = !
+            // * 
+            //*/
+
+            //int a = 0;
+            //int b = 0;
+            //int x = 10;
+            //int y = 10;
+
+
+            //if (a == 0 && b == 0) // las dos deben ser igual 
+            //{
+            //    Console.WriteLine("Las dos valores son cero");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("solo uno de los dos valores es cero");
+            //}
+            //Console.ReadKey();
+
+
+            //if (a == 0 || b == 0) // las dos deben ser igual 
+            //{
+            //    Console.WriteLine("al menos uno de los Valores es cero");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Ninguno de los valores es cero ");
+            //}
+            //Console.ReadKey();
+
+            //// ------------- PARTE 10 SWITCH - CASE -----------------------
+
+            //int val = 1;
+            //switch (val)
+            //{
+            //    case 1:
+            //        Console.WriteLine("entro al case 1");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("entro al case 2");
+            //        break;
+            //    default:
+            //        Console.WriteLine("entro al default");
+            //        break;
+
+            //}
+            //Console.ReadKey();
+
+        // ------------- PARTE 11 CICLO WHILE -----------------------
+
+            /* BLOQUES DE CODIGO QUE SE REPETIRAN HASTA QUE LO SENTENCIEMO
+             * INCREMENTOS Y DECREMENTOS
+             * (++ Y --)
+            */
+
+          
+            //int number = 0;
+
+            //while(number<10)
+            //{       
+            //    Console.WriteLine("Hola Mundo ");
+            //    number++;
+            //}
+            //Console.ReadKey();
+
+       // ------------- PARTE 12 CICLO DO WHILE -----------------------
 
             /*
-             * =
-             * +
-             * *
-             * /
-             * % devuelve el residuo de la division
-            */
-
-            int result = 7%3;
-            Console.WriteLine("la variabel resultado contiene : " + result);
-            Console.ReadKey();
-
-
-        // ------------- PARTE 7 LEER DE LA CONSOLA -----------------------
-
-            string entrada = "";
-
-
-            Console.WriteLine("Escribe tu nombre ");
-            entrada = Console.ReadLine();
-
-            Console.WriteLine("hola " + entrada + ", Como te encuentras hoy ?");
-            Console.ReadKey();
-
-
-        // ------------- PARTE 8 SENTENCIA IF -----------------------
-            
-            /* IF - SI
-             * sentencia de condicion 
-            */
-
-            if (10 > 20)
-            {
-                //instruccion
-                Console.WriteLine("La sentencia es verdadera ");
-            }
-            else{
-                Console.WriteLine("Es falsa");
-            }
-            Console.ReadKey();
-
-        // ------------- PARTE 9 EXPRESIONES LOGICAS -----------------------
-
-            /* Operadores Logicos
-             * Y = &&
-             * O = !!
-             * NOT = !
+             * HAZ MIENTRAS
              * 
             */
 
-            int a = 0;
-            int b = 0;
-            int x = 10;
-            int y = 10;
+            //int num = 0;
+            
+
+            //do // haz esto
+            //{
+            //    Console.WriteLine("hola mundo");
+            //    num++;
+            //}
+            //while (num < 10);
+            //Console.ReadKey();
+
+        // ------------- PARTE 13 CICLO FOR -----------------------
+
+            /*
+             * EL CICLO QUE MAS SE UTILIZA HOY EN DIA
+             * (simplicidad)
+             * 
+            */
+
+         
+            //for (int num = 0; num < 10; num++ ) {
+            //    Console.WriteLine("try ciclo for");
+            //}
+            //Console.ReadKey();
+
+            
 
 
-            if (a == 0 && b == 0) // las dos deben ser igual 
-            {
-                Console.WriteLine("Las dos valores son cero");
-            }
-            else {
-                Console.WriteLine("solo uno de los dos valores es cero");
-            }
-            Console.ReadKey();
+       // } // :::::::::::::::::::::::::::: FIN FUNCION :::::::::::::::::::::::::::::::::::::::::
 
 
-            if (a == 0 || b == 0) // las dos deben ser igual 
-            {
-                Console.WriteLine("al menos uno de los Valores es cero");
-            }
-            else
-            {
-                Console.WriteLine("Ninguno de los valores es cero ");
-            }
-            Console.ReadKey();
-
-        // ------------- PARTE 10 SWITCH - CASE -----------------------
-
-            int val = 1;
-            switch(val)
-            {
-                case 1:
-                    Console.WriteLine("entro al case 1");
-                    break;
-                case 2:
-                    Console.WriteLine("entro al case 2");
-                    break;
-                default:
-                    Console.WriteLine("entro al default");
-                    break;
-
-            }
-            Console.ReadKey();
 
 
-        } //fin
-    }
-}
+        // ------------- PARTE 15 FUNCIONES QUE EJECUTAN CODIGO -----------------------
+
+        /*
+         *FUNCION ES ALGO QUE VA EJECUTAR CODIGO (INSTRUCCIONES)
+         *TIPO DE FUNCIONES
+         * 1 EJECUTAN CODIGO
+         * 2 DEVUELVEN VALORES
+         * 3 RECIBEN VALORES
+         * 4 RECIBEN Y DEVUELVEN VALORES
+         * 
+         */
+
+        /*DECLARAR UNA FUNCION */
+        //modificador de acceso funcion publica, privada o protegida
+        //modificador tipo  nombre (parametros)
+
+        /* public o private
+         * void (para saber que mi funcioon no devolvera nada )
+         * parametros
+         */ 
+        //static void mostrarhola(){
+
+        //    Console.WriteLine("hola");
+        //    Console.ReadKey();
+
+        //    }
+
+
+        // ------------- PARTE 15 FUNCIONES QUE DEVUELVEN UN VALOR -----------------------
+
+        /*
+         *  RETORNAR UN VALOR 
+         *  CREAREMOS UNA FUNCION QUE NOS DEVUELVA UNA SUMA
+        */
+        
+        //static void mas(){ 
+        //    int n = 5;
+        //    Console.WriteLine(regresasuma());
+        //    Console.ReadKey();
+        //}
+
+        //static int regresasuma() {
+
+        //    return 7; 
+
+
+        // ------------- PARTE 16 FUNCIONES QUE RECIBEN VALORES -----------------------
+
+        /*
+         * RECIBE UN VALOR DEPENDIENDO 
+         */
+
+
+        //static void resta(int num1, int num2){
+
+        //    int res = 0;
+        //    res = num1 - num2;
+        //    Console.WriteLine("el resultado es " + res);
+        //    Console.ReadKey();
+        //}
+
+
+        // -------- PARTE 17 FUNCIONES QUE RECIBEN Y DEVUELVEN VALORES -------------------
+
+        //static int multiplica(int num1, int num2) {
+        //    int res = 0;
+        //    res = num1 * num2;
+
+        //    return res;
+        //}
+
+
+        // -------- PARTE 18 ARRAY (ARREGLOS) -------------------
+
+        //DEFINICION DE UN ARRAY
+         // tipo[] nombre = new tipo [tamaño];
+
+        //static void Main(string[] args)
+        //{
+        //    int[] arreglo = new int[4];
+        //    arreglo [0]= 10;
+        //    arreglo [1]= 20;
+        //    arreglo [2]= 30;
+        //    arreglo [3]= 40;
+
+        //    Console.WriteLine(arreglo[0]);
+        //    Console.ReadKey();
+        //}
+
+
+        // -------- PARTE 19 ARRAY CON CICLO FOR -------------------
+
+        //static void Main(string[] args)
+        //{
+        //    llenado de un arreglo mediante un ciclo
+
+        //    int[] arreglo = new int[10];
+        //    for (int i = 0; i < 10; i++) 
+        //    {
+        //         llamo a arreglo 
+        //        arreglo[i] = i+ 1;
+        //    }
+
+        //     Mostrar arreglo 
+        //    for (int x = 0; x < 10; x++)
+        //    {
+        //        Console.WriteLine(arreglo[x]);
+        //    }
+
+
+        //    Console.ReadKey();
+            
+        //}
+
+
+
+        // -------- PARTE 20 ARRAY CON CICLO WHILE-------------------
+
+        //static void Main(string[] args)
+        //{
+        //    // Llenado de Array
+        //    int[] arreglo = new int[10];
+        //    int i =0;
+        //    while(i < 10)
+        //    {
+        //        arreglo[i] = i +1;
+        //        i++;
+        //    }
+
+        //    // Mostrar arreglo 
+        //    for (int x = 0; x < 10; x++)
+        //    {
+        //        Console.WriteLine(arreglo[x]);
+        //    }
+
+        //    // Limpia el Array
+        //    Array.Clear(arreglo, 0, 10);
+
+        //    // Mostrar arreglo 
+        //    for (int x = 0; x < 10; x++)
+        //    {
+        //        Console.WriteLine(arreglo[x]);
+        //    }
+
+        //    Console.ReadKey();
+
+        //}
+
+        // -------- PARTE 21 MATRICES-------------------
+
+        //static void Main(string[] args)
+        //{
+        //    /*  definicion de matriz
+        //        arreglo de dos direcciones
+        //     * 
+        //        declaracion de una matriz 
+        //        tipodedato[,] nombre = new tipoedato[tamaño, tamaño];
+        //    */
+
+        //    int[,] matriz = new int[3, 3];
+
+
+        //    matriz[0, 0] = 5;
+        //    matriz[1, 2] = 7;
+
+        //    Console.WriteLine(matriz[1,2]);
+
+        //    Console.ReadKey();
+        //}
+
+        // -------- PARTE 22 MATRICES 2  -------------------
+
+        //static void Main(string[] args)
+        //{
+        //    int[,] matriz = new int[3, 3];
+
+        //    // ciclos anidados
+        //    for (int i = 0; i < 3; i++)
+        //    {
+        //        for (int x = 0; x < 3; x++) 
+        //        {
+        //            matriz[i, x] = 5;
+        //        }
+        //    }
+
+        //    // mostrar la matriz
+        //    // ciclos anidados
+        //    for (int i = 0; i < 3; i++)
+        //    {
+        //        for (int x = 0; x < 3; x++)
+        //        {
+        //            Console.WriteLine("{0}", matriz[i,x]);
+        //        }
+        //    }
+
+
+        //        Console.WriteLine();
+        //    Console.ReadKey();
+        //}
+
+        // -------- PARTE 23 COLECCIONES ARRAYLIST -------------------
+
+        //static void Main(string[] args)
+        //{
+        //    /* ARRAYLIST DINAMICO
+        //     * HASHTABLE
+        //     * QUEUE
+        //     * PILA
+        //    */
+
+        //    //ARRAYLIST [Using System.collection (todas las colecciones)]
+        //    ArrayList carros = new ArrayList(); //dinamico
+        //    carros.Add("Ferrari");
+        //    carros.Add("Camaro");
+        //    carros.Add("Porsche");
+        //    //Console.WriteLine(carros.Count);
+            
+        //    for (int i = 0; i < 3; i++) 
+        //    {
+        //        Console.WriteLine(carros[i]);
+        //    }
+
+        //    Console.ReadKey();
+            
+        //}
+
+        //// -------- PARTE 24 COLECCIONES STACK PILA -------------------
+
+        //static void Main(string[] args)
+        //{
+
+        //    // last in first out 
+        //    // crear una pila 
+        //    /*  (push : inserta elementos dentro de la pila)
+        //     *  (pop retorna el ultimo elemento que se ingreso)
+        //    */
+        //    Stack mipila = new Stack();
+        //    mipila.Push(8);
+        //    mipila.Push(10);
+        //    mipila.Push(20);
+
+        //    int num = 0;
+        //    num = (int)mipila.Pop();
+        //    Console.WriteLine(num);
+        //    Console.WriteLine(mipila.Count);
+        //    mipila.Clear();
+        //    Console.WriteLine(mipila.Count);
+
+        //    Console.ReadKey();
+        //}
+
+        // -------- PARTE 25 COLECCIONES QUEUE - COLA -------------------
+
+        //static void Main(string[] args)
+        //{
+        //    /*
+        //     * FIFO FIRST IN FIRST OUT
+        //     * 
+        //    */
+
+        //    Queue fila = new Queue();
+
+        //    //agrega elementos 
+        //    fila.Enqueue(9);  //espera
+        //    fila.Enqueue(15);
+        //    fila.Enqueue(26);
+
+
+        //    /*  atiende a la primer persona que llego 
+        //    *   automaticamente la var a eliminar y seguira con else mismo cliente 
+        //     *  
+        //    */
+
+        //    fila.Dequeue(); //atendido
+        //    fila.Dequeue();
+
+        //    Console.WriteLine(fila.Peek());
+
+        //    fila.Clear();
+
+        //    Console.ReadKey();
+
+
+        //}
+
+
+
+        //// -------- PARTE 26 COLECCIONES QUEUE - COLA HASHTABLE -------------------
+
+        //static void Main(string[] args)
+        //{
+        //    /*
+        //     *  como una lista de utiles o de compra 
+        //     *  se rige por prioridad 
+        //     *  como una tabla de base datos podemos acceder a los datos mediante llaves 
+        //     *   
+        //     * 
+        //    */
+
+        //    Hashtable tabla = new Hashtable();
+        //    tabla.Add("chapata", 23.5);
+        //    tabla.Add("bolillo", 1.5);
+        //    tabla.Add("choco", 2.5);
+
+        //    float valor;
+        //    valor =(float)tabla["concha"];
+        //    Console.WriteLine(" valor : " + valor);
+            
+
+        //    Console.ReadKey();
+
+
+        //}
+
+
+
+        // -------- PARTE 27 PROGRAMACION ORIENTADA A OBJETOS -------------------
+
+        //static void Main(string[] args)
+        //{
+            
+        //    /*
+        //     *  ABSTRAER UN TELEFONO / UN FOCO
+        //     *  
+        //     * ATRIBUTO (datos)
+        //     *  Precio
+        //     *  Marca
+        //     *  Color
+        //     *  
+        //     * METODOS (funciones)
+        //     *  Acelerar
+        //     *  Detenerse
+        //     *  frenar
+        //     *  
+        //     * 
+        //    */
+        //    Console.ReadKey();
+        //}
+
+
+        // -------- PARTE 28 PROGRAMACION ORIENTADA A OBJETOS -------------------
+
+                // en otro archivo
+
+    } // fin
+ }
