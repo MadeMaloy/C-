@@ -6,36 +6,339 @@ using System.Threading.Tasks;
 
 namespace Curso_Csharp_POO__continuacion_
 {
+
+    //class Programs
+    //{
+
+    //    /*  ---------------  28 METODOS / ATRIBUTOS / CLASES  --------------------  */
+    //    static void Main(String[] args)
+    //    {
+    //        Automovil auto = new Automovil();
+    //        auto.precio = 5000;
+    //        Console.WriteLine("precio del auto : " + auto.precio);
+    //        auto.arrancar();
+    //        auto.velocidad = 200;
+    //        auto.acelerar();
+    //        Console.WriteLine("el auto va a : " + auto.velocidad + " KM/H");
+    //        Console.ReadKey();
+    //    }
+
+    //}
+
+    ///* -------------------   DIVISION    ----------------- */
+
+    //class Automovil
+    //{
+    //    // atributos datos
+    //    public int precio;
+    //    public int velocidad;
+
+    //    // metodos Funciones
+    //    public void arrancar()
+    //    {
+    //        Console.WriteLine("el auto ya partio");
+    //    }
+
+
+    //    public void acelerar()
+    //    {
+    //        Console.WriteLine("Acelerando");
+    //    }
+    //}
+
+
+    /*  ---------------  29 MODIFICADORES DE ACCESO  --------------------  */
+    //class Programs
+    //{
+
+
+    //    static void Main(String[] args)
+    //    {
+    //        Automovil auto = new Automovil();
+    //        auto.precio = 5000;
+    //        Console.WriteLine("precio del auto : " + auto.precio);
+    //        auto.arrancar();
+    //        auto.velocidad = 200;
+    //        auto.acelerar();
+    //        Console.WriteLine("el auto va a : " + auto.velocidad + " KM/H");
+    //        Console.ReadKey();
+    //    }
+
+    //}
+
+
+    /////* -------------------   DIVISION    ----------------- */
+
+    //class Automovil
+    //{
+    //    // atributos datos
+    //    public int precio;
+    //    public int velocidad;
+
+    //    // metodos Funciones
+    //    public void arrancar()
+    //    {
+    //        Console.WriteLine("el auto ya partio");
+    //    }
+
+
+    //    public /*public modificador acceso*/ void acelerar()
+    //    {
+    //        Console.WriteLine("Acelerando");
+    //    }
+
+
+    //}
+
+    ///*  ---------------  30 GET / SET  --------------------  */
+    //class Programs
+    //{
+
+
+    //    static void Main(String[] args)
+    //    {
+    //        Automovil auto = new Automovil();
+    //        auto.Velocidad = 300;
+
+    //        Console.WriteLine("la velocidad es: " + auto.Velocidad);
+
+    //        Console.ReadKey();
+    //    }
+
+    //}
+
+
+    /////* -------------------   DIVISION    ----------------- */
+
+    //class Automovil
+    //{
+    //    // atributos datos
+    //    public int precio;
+    //    private int velocidad;
+    //    /*   si es private con los metodos get y set puedes tomar/editar lo que desees*/
+    //    // metodos Funciones
+    //    public int Velocidad
+    //    {
+    //        get
+    //        {
+    //            return velocidad;
+    //        }
+    //        set 
+    //        {
+    //            velocidad = value;
+    //        }
+    //    }
+
+
+    //}
+
+
+    ///*  ---------------  31 METODOS PUBLICOS Y PRIVADOS  --------------------  */
+    //class Programs
+    //{
+
+
+    //    static void Main(String[] args)
+    //    {
+    //        /*  OBJETO AUTOMOVIL    */
+    //        Automovil auto = new Automovil();
+    //        auto.Suma();
+
+
+    //        Console.ReadKey();
+    //    }
+
+    //}
+
+
+    /////* -------------------   DIVISION    ----------------- */
+
+    //class Automovil
+    //{
+    //    // atributos datos
+    //    public int precio;
+    //    private int velocidad;
+
+
+
+
+    //    /*   si es private con los metodos get y set puedes tomar/editar lo que desees*/
+    //    // metodos Funciones
+    //    public int Velocidad
+    //    {
+    //        get
+    //        {
+    //            return velocidad;
+    //        }
+    //        set
+    //        {
+    //            velocidad = value;
+    //        }
+    //    }
+
+    //    public void Suma()
+    //    {
+    //        Console.WriteLine(CalculaSuma(5, 5));
+
+    //    }
+
+
+    //     private int CalculaSuma(int a, int b)
+    //    {
+    //        int suma = a + b;
+    //        return suma;
+    //    }
+    //}
+
+
+    /////*  ---------------  32 EL CONSTRUCTOR  --------------------  */
+    //class Programs
+    //{
+
+
+    //    static void Main(String[] args)
+    //    {
+    //        /*  INSTANCIAR AUTOMOVIL    */
+    //        Automovil auto = new Automovil(500,100);
+
+    //        Console.ReadKey();
+    //    }
+
+    //}
+
+
+    /////* -------------------   DIVISION    ----------------- */
+
+    //class Automovil
+    //{
+    //    // atributos datos
+    //    public int precio;
+    //    private int velocidad;
+
+
+    //    /*  CONSTRUCTOR  */
+    //    public Automovil(int pre, int vel)
+    //    {
+    //        this.precio = pre;
+    //        this.velocidad = vel;
+    //        Console.WriteLine("se ha creado un objeto de tipo Automovil");
+
+    //    }
+
+    //}
+
+
+    ///*  ---------------  33 SOBRECARGA DE METODOS --------------------  */
+    //class Programs
+    //{
+
+
+    //    static void Main(String[] args)
+    //    {
+    //        /*  INSTANCIAR AUTOMOVIL    */
+    //        Automovil auto = new Automovil(500, 100);
+    //        auto.Suma("ferrari");
+    //        Console.ReadKey();
+    //    }
+
+    //}
+
+
+    /////* -------------------   DIVISION    ----------------- */
+
+    //class Automovil
+    //{
+    //    // atributos datos
+    //    public int precio;
+    //    private int velocidad;
+
+
+    //    /*  CONSTRUCTOR  */
+    //    public Automovil(int pre, int vel)
+    //    {
+    //        this.precio = pre;
+    //        this.velocidad = vel;
+    //        Console.WriteLine("se ha creado un objeto de tipo Automovil");
+
+    //    }
+
+
+    //    // METODOS 
+    //    public void Suma()
+    //    {
+    //        int suma = precio + velocidad;
+    //        Console.WriteLine(suma);
+
+    //    }
+
+    //    public void Suma(String nom)
+    //    {
+    //        int suma = precio + velocidad;
+    //        Console.WriteLine("este es nom : " + nom + " y la suma es : "+suma);
+    //    }
+
+
+
+
+    //}
+
+    ///*  ---------------  34 HERENCIA --------------------  */
     class Programs
     {
+
+
         static void Main(String[] args)
         {
+
             Automovil auto = new Automovil();
-            auto.precio = 5000;
-            Console.WriteLine("precio del auto : " + auto.precio);
-            auto.arrancar();
+            auto.muestraprecio();
+
+
+            Avion nicofly = new Avion();
+            {
+                nicofly.nuestranombre();
+            }
+
             Console.ReadKey();
         }
 
     }
 
 
-    /* ------------------------------------------------------ */
+    ///* -------------------   DIVISION    ----------------- */
 
-    class Automovil
+    class Transporte
     {
-        // atributos datos
-        public int precio;
-        public int velocidad;
-
-        // metodos Funciones
-        public void arrancar()
-        {
-            Console.WriteLine("el auto ya partio");
-        }
-
-
+        protected int numPasajero;
+        protected int Precio;
+        protected String Nombre;
 
     }
+
+
+    class Automovil : Transporte
+    {
+        public void muestraprecio()
+        {
+            Precio = 500;
+            Console.WriteLine("el precio de este auto es {0}", Precio);
+        }
+
+    }
+
+    class Avion : Transporte
+    {
+        public void nuestranombre()
+        {
+            Nombre = "nicolas weed";
+            Console.WriteLine("el nombre del avion es : {0}", Nombre);
+        }
+    }
+
+
+
+
+
+
 
 } // fin 
